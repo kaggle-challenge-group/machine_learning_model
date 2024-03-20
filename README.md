@@ -11,14 +11,15 @@ Features:
 - Age: Age of the passenger.
 - VIP: Whether the passenger is a VIP.
 - CryoSleep: Indicates if the passenger is in cryo-sleep.
+- Cabin - The cabin number where the passenger is staying. Takes the form deck/num/side, where side can be either P for Port or S for Starboard.
 - Deck: Deck of the ship where the passenger is located.
-- Side: Side of the ship where the passenger's room is located.
-- HomePlanet: Planet of origin of the passenger.
 - Destination: Intended destination of the passenger.
-- RoomService, FoodCourt, ShoppingMall, Spa, VRDeck: Indicates if the passenger used the respective facilities during the journey.
+- RoomService, FoodCourt, ShoppingMall, Spa, VRDeck - Amount the passenger has billed at each of the Spaceship Titanic's many luxury amenities.
+- Name - The first and last names of the passenger.
+- Transported - Whether the passenger was transported to another dimension. This is the target, the column you are trying to predict.
 
-Data Preprocessing:
-- Handle missing values using IterativeImputer and group-based imputation.
+ Data Preprocessing:
+- Handle missing values using Iterative Imputer and group-based imputation.
 - Analyze group consistency for specific columns like HomePlanet, Destination, and Cabin.
 - Predict missing values using RandomForestClassifier.
 - Perform one-hot encoding for categorical variables.
