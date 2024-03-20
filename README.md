@@ -1,3 +1,9 @@
+Team-6:
+Raghavendra Devineni-21072747
+Charan Sai Prakash-21071658
+Sai Krishna Reddy Nanduri-21078449
+Syam Sundar Boina-21061898
+Akhil Kumar Matala-21073209
 Features:
 PassengerId - A unique Id for each passenger. Each Id takes the form gggg_pp where gggg indicates a group the passenger is travelling with and pp is their number within the group. People in a group are often family members, but not always.
 HomePlanet - The planet the passenger departed from, typically their planet of permanent residence.
